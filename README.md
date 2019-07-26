@@ -2,6 +2,8 @@
 
 This is an image of a 64-bit Debian installed in QEMU for debugging PPC-systems on x86-64 hardware.
 
+![Screenshot of PPC64 Debian](screenshot.png?raw=true "Screenshot")
+
 ## How to split the file
 
 > tar -cvjf debian.tar.bz2 debian.img
@@ -27,7 +29,7 @@ Run this with
 
 > export MEMORY=1024            # Choose the amount of Memory in MB
 
-> qemu-system-ppc64 -hda $HDD -boot d -cdrom $CDROM -m $MEMORY
+> qemu-system-ppc64 -hda $HDD -boot c -cdrom $CDROM -m $MEMORY
 
 ## Username and password
 
